@@ -23,7 +23,6 @@ if __name__ == "__main__":
 
         # Define path to the desktop's data folder
         index_desktop_path = os.path.join(os.path.expanduser('~'), 'Desktop', 'data', 'indice')
-        # stock_desktop_path = os.path.join(os.path.expanduser('~'), 'Desktop', 'data', 'stock')
 
         # Download the CSV file to the data folder
         success, saved_path = download_csv(final_url_index, index_csv_filename, index_desktop_path)
@@ -62,3 +61,12 @@ if __name__ == "__main__":
 
     else:
         print("Date check failed. CSV file not downloaded.")
+
+    nifty_desktop_path = os.path.join(os.path.expanduser('~'), 'Desktop', 'data', 'broad')
+    download_csv('https://archives.nseindia.com/content/indices/ind_nifty50list.csv', 'ind_nifty50list.csv', nifty_desktop_path)
+
+    download_csv('https://archives.nseindia.com/content/indices/ind_niftynext50list.csv', 'ind_niftynext50list.csv', nifty_desktop_path)
+    download_csv('https://archives.nseindia.com/content/indices/ind_niftymidcap50list.csv', 'ind_niftymidcap50list.csv',
+                 nifty_desktop_path)
+    download_csv('https://archives.nseindia.com/content/indices/ind_nifty200list.csv', 'ind_nifty200list.csv',
+                 nifty_desktop_path)
