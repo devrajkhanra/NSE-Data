@@ -21,7 +21,7 @@ if __name__ == "__main__":
     # List of dates
 
     print("The start and end dates are: ")
-    print(f('{user_start_year}, {user_start_month} ,{user_start_date} till {user_end_year}, {user_end_month} ,{user_end_date}'))
+    print((f'{user_start_year}, {user_start_month} ,{user_start_date} till {user_end_year}, {user_end_month} ,{user_end_date}'))
 
     
     try:
