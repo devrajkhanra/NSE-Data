@@ -6,9 +6,12 @@ It downloads CSV files of
 - Broad market
 
 ### If you run it for the first time then in the root folder of the project, run the `main_many_dates.py`
-- Make sure before you run it change the pdate according to the date you want
-- The pdate function takes six parameters. They are start_year, start_month, start_day, end_year, end_month and end_day
-- For example it may look like pdate(2024,1,1,2024,7,27)
+![Capture2](https://github.com/user-attachments/assets/aae13b1a-21ed-4e63-ad66-aefd5363c437)
 
 
-### put any date from Monday to Friday in ddmmyyyy format or 01012024
+
+
+### Once done then run `main.py`
+- Enter date as ddmmyyyy, example: 01082024
+![Capture](https://github.com/user-attachments/assets/2dad6ef2-9320-485b-aa9d-5862b95ad46c)
+
