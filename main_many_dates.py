@@ -6,12 +6,15 @@ from modules.create_data_folder import create_data_folder
 from modules.download import download_csv
 from modules.generate_url import generate_url
 from modules.user_input import user_input
+from modules.pdates import pdate
 
 if __name__ == "__main__":
     create_data_folder()
     # user_date = user_input()
     # List of dates
-    list_of_dates = ['01062024', '02062024', '03062024', '04062024', '05062024', '06062024', '07062024',  '08062024', '09062024', '10062024', '11062024', '12062024', '13062024', '14062024',  '15062024', '16062024', '17062024', '18062024', '19062024', '20062024', '21062024',  '22062024', '23062024', '24062024', '25062024', '26062024', '27062024', '28062024',  '29062024', '30062024', '01072024', '02072024', '03072024', '04072024', '05072024',  '06072024', '07072024']  # Replace with your actual list of dates
+    
+    # pdate(start_year, start_month, start_day, end_year, end_month, end_day)
+    list_of_dates = pdate(2024, 1, 1,2024, 7, 27)
 
     for user_date in list_of_dates:
         user_date_to_ma = convert_to_ddmmyy(user_date)
