@@ -1,7 +1,7 @@
 import os
 import sys
 
-from check_character import get_user_input, is_letter
+from modules.check_character import get_user_input, is_letter
 from modules.check_date_in_csv import check_date_in_csv
 from modules.convert_date import convert_to_ddmmyy
 from modules.create_data_folder import create_data_folder
@@ -23,7 +23,6 @@ if __name__ == "__main__":
     print("The start and end dates are: ")
     print((f'{user_start_year}, {user_start_month} ,{user_start_date} till {user_end_year}, {user_end_month} ,{user_end_date}'))
 
-    
     try:
         user_choice = get_user_input()
 
