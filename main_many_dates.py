@@ -12,18 +12,20 @@ from modules.pdates import pdate
 
 if __name__ == "__main__":
     create_data_folder()
-    user_start_year = user_input("Enter start year as yyyy: ")
-    user_start_month = user_input("Enter start month as m: ")
-    user_start_date = user_input("Enter start date as d: ")
-    user_end_year = user_input("Enter end year as yyyy: ")
-    user_end_month = user_input("Enter end month as m: ")
-    user_end_date = user_input("Enter end date as d: ")
+    user_start_year = input("Enter start year as yyyy: ")
+    user_start_month = input("Enter start month as m: ")
+    user_start_date = input("Enter start date as d: ")
+    user_end_year = input("Enter end year as yyyy: ")
+    user_end_month = input("Enter end month as m: ")
+    user_end_date = input("Enter end date as d: ")
     # List of dates
 
-    print("The start and end dates are: ")
-    print((f'{user_start_year}, {user_start_month} ,{user_start_date} till {user_end_year}, {user_end_month} ,{user_end_date}'))
+    
 
     try:
+        print("The start and end dates are: ")
+        print((f'{user_start_year}, {user_start_month} ,{user_start_date} till {user_end_year}, {user_end_month} ,{user_end_date}'))
+
         user_choice = get_user_input()
 
         if user_choice == 'Y':

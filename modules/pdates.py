@@ -2,8 +2,8 @@ from datetime import datetime, timedelta
 
 def pdate(start_year,start_month,start_day, end_year, end_month,end_day):
     # Start and end dates
-    start_date = datetime(start_year,start_month,start_day)
-    end_date = datetime(end_year, end_month, end_day)
+    start_date = datetime(int(start_year),int(start_month),int(start_day))
+    end_date = datetime(int(end_year),int(end_month),int(end_day))
 
     # Generate list of dates
     date_array = []
