@@ -12,6 +12,6 @@ It downloads CSV files of
 
 
 ### Once done then run `main.py`
-- Enter date as ddmmyyyy, example: 01082024
+Enter date as ddmmyyyy, example: 01082024
 ![Capture](https://github.com/user-attachments/assets/2dad6ef2-9320-485b-aa9d-5862b95ad46c)
 
