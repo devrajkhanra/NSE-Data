@@ -7,7 +7,7 @@ It downloads CSV files of
 
 ### If you run it for the first time then in the root folder of the project, run the `main_many_dates.py`
 - Make sure before you run it change the pdate according to the date you want
-- The pdate function takes six parameters. They are start_year, start_month, start_day, end_year, end_month
+- The pdate function takes six parameters. They are start_year, start_month, start_day, end_year, end_month and end_day
 - For example it may look like pdate(2024,1,1,2024,7,27)
 
 
