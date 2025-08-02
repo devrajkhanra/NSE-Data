@@ -7,10 +7,22 @@
 
 import yfinance as yf
 import pandas as pd
-df = yf.download("ICICIBANK.NS", start="2025-07-17", end="2025-07-18", interval="5m")
-df = df.reset_index()
-df = df.set_index('Datetime')
 
-# Convert UTC to IST (UTC+5:30)
-df.index = df.index + pd.Timedelta(hours=5, minutes=30)
-print(df)
+start = input('Enter start date (YYYY-MM-DD): ')
+end = input('Enter end date (YYYY-MM-DD): ')
+
+# Fetch 5-minute data
+df = yf.download("^NSEI", start=start, end=end, interval="5m")
+
+# Confirm data was received
+if df is not None and not df.empty:
+    df = df.reset_index()
+    df = df.set_index('Datetime') if 'Datetime' in df.columns else df.set_index('Date')
+
+    # Convert from UTC to IST
+    df.index = df.index + pd.Timedelta(hours=5, minutes=30)
+
+    print(df)
+    df.to_csv(f"nifty50_5min_{start}.csv")
+else:
+    print("No data was retrieved. Check the ticker symbol or date range.")
